@@ -1,0 +1,82 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "首頁";
+}
+
+<div class="text-center">
+    <h1 class="display-4">歡迎來到 .NET 9 教學網站</h1>
+    <p class="lead">學習如何使用 ASP.NET Core 9.0 建立現代化 Web 應用程式</p>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">🚀 .NET 9 新功能</h5>
+                <p class="card-text">探索 .NET 9 的最新功能與改進，包括效能提升、新的 API 以及開發者體驗的改善。</p>
+                <a href="#features" class="btn btn-primary">了解更多</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">📚 Razor Pages</h5>
+                <p class="card-text">學習如何使用 Razor Pages 建立動態網頁，這是一種簡單而強大的頁面導向編程模型。</p>
+                <a href="#razorpages" class="btn btn-primary">開始學習</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">💻 實作範例</h5>
+                <p class="card-text">透過實際的程式碼範例，學習如何建立完整的 Web 應用程式。</p>
+                <a href="#examples" class="btn btn-primary">查看範例</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="mt-5" id="features">
+    <h2>✨ .NET 9 主要特色</h2>
+    <ul class="list-group">
+        <li class="list-group-item">
+            <strong>效能提升：</strong>更快的啟動時間和更低的記憶體使用量
+        </li>
+        <li class="list-group-item">
+            <strong>C# 13：</strong>最新的 C# 語言功能支援
+        </li>
+        <li class="list-group-item">
+            <strong>雲端優化：</strong>更好的容器和雲端部署支援
+        </li>
+        <li class="list-group-item">
+            <strong>開發者工具：</strong>改進的診斷和除錯體驗
+        </li>
+    </ul>
+</div>
+
+<div class="mt-5" id="razorpages">
+    <h2>📖 關於 Razor Pages</h2>
+    <p>Razor Pages 是 ASP.NET Core 中的一種頁面導向編程模型，讓建立動態網頁變得更加簡單。每個 Razor Page 由兩個檔案組成：</p>
+    <ul>
+        <li><code>.cshtml</code> - 包含 HTML 和 Razor 標記的視圖檔案</li>
+        <li><code>.cshtml.cs</code> - 包含頁面模型和處理邏輯的程式碼後置檔案</li>
+    </ul>
+</div>
+
+<div class="mt-5" id="examples">
+    <h2>💡 程式碼範例</h2>
+    <div class="bg-light p-3 rounded">
+        <h5>簡單的 Razor 語法：</h5>
+        <pre><code>@@page
+@@model IndexModel
+@@{
+    ViewData["Title"] = "首頁";
+}
+
+&lt;h1&gt;目前時間：@@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")&lt;/h1&gt;</code></pre>
+    </div>
+    <p class="mt-3">目前伺服器時間：<strong>@DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss")</strong></p>
+</div>
